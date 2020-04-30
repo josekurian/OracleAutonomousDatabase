@@ -29,7 +29,7 @@ Below are the pre-requisites to perform this
  
    We need to create a path for TNS_ADMIN to place the sqlnet.ora and tnsnames.ora files.
  
-    - Create a folder **network** and then inside that **admin** folder
+   - Create a folder **network** and then inside that **admin** folder
 
   For example if my Insta Client home is **D:\Programs\instantclient_19_6** then after creating the above folders I will have a path like **D:\Programs\instantclient_19_6\network\admin**
 
