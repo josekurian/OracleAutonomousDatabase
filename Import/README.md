@@ -1,12 +1,12 @@
-## Import DUMP file in to Oracle Autonomous Database
+## Import DUMP file into Oracle Autonomous Database
 
 The below process will outline the steps to import a DUMP file from Object Storage Bucket in to Oracle Autonomous Database.
 
 ### Pre-requisites
 
-- Oracle Insta Client [Steps Here](/InstaClient/README.MD)
-- DUMP file in Object Storage Bucket
-- URL to the DUMP file 
+- Oracle Insta Client [Setup](/InstaClient/README.md)
+- DUMP file in Object Storage Bucket [Steps to Export](/Export/README.md)
+- Object Storage URL of the DUMP file 
 - OCI Credentails to Access the Object Storage bucket
 - Access to Autonomous Database to create CREDENTIAL and Schema Objects
 
@@ -47,3 +47,8 @@ Gather below important information as needed for the impdp utility.
    
 Open a command line window and execute the above command 
 
+![alt Text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/Import/images/importdmp.PNG)
+
+We can verify the same using below SQL statement, connected as the user.
+
+    SELECT * FROM TAB;
