@@ -22,10 +22,14 @@ Below are the pre-requisites to perform this
     - instantclient-sqlplus-windows.x64.19.6.0.0.0dbru.zip
     - instantclient-tools-windows.x64.19.6.0.0.0dbru.zip
   
+   ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/InstaClientSoftware.PNG)
+  
    The important part to remember is all the three zip files should be extracted to the same folder. To achive this we should place all files in same folder and use tools like 7Zip and do **Extract Here** on all three files 
 
+   ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/InstaClientAfterExtract.PNG)
 
- ### Step 2: Create folders inside the Insta Client Folder
+
+### Step 2: Create folders inside the Insta Client Folder
  
    We need to create a path for TNS_ADMIN to place the sqlnet.ora and tnsnames.ora files.
  
@@ -44,6 +48,8 @@ Below are the pre-requisites to perform this
   This path contains the cwallet.sso file which is needed to authenticate with Autonomous Database.
 
   We will need to edit the sqlnet.ora file to change the DIRECTORY path to refer to the above location.
+  
+  ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/sqlnetchange.PNG)
 
 
 
@@ -51,9 +57,9 @@ Below are the pre-requisites to perform this
 
    Copy the **tnsnames.ora** and **sqlnet.ora** to the path created in Step2 Ex. **D:\Programs\instantclient_19_6\network\admin**
   
+  ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/WalletFiles.PNG)
 
 
-Make the edit as needed
 
 
  
