@@ -1,6 +1,6 @@
 ## Export Oracle Autonomous Database Schema
 
-Below steps will outline the steps to export a Oracle Autonomous Database Schema using Oracle Insta Client expdp utility.
+Below steps will outline the process to export a Oracle Autonomous Database Schema using Oracle Insta Client expdp utility.
 
 ### Pre-requisites
 - Oracle Insta Client setup [Steps Here](/InstaClient/README.md)
