@@ -1,13 +1,13 @@
 
 ## Insta Client Setup on Windows for Autonomous Datawarehouse
 
-The below steps will outline the setup of InstaClient on Windows machine. 
+   The below steps will outline the setup of InstaClient on Windows machine. 
 
 ### Pre-requisites
 
-Below are the pre-requisites to perform this
-- Autonomous Data Warehouse Wallet file needs to be downloaded
-- Access to edit the Environment Variables 
+  Below are the pre-requisites to perform this
+  - Autonomous Data Warehouse Wallet file needs to be downloaded
+  - Access to edit the Environment Variables 
 
 
 ### Step 1: Download the Oracle Insta Client Software 
@@ -58,7 +58,31 @@ Below are the pre-requisites to perform this
    Copy the **tnsnames.ora** and **sqlnet.ora** to the path created in Step2 Ex. **D:\Programs\instantclient_19_6\network\admin**
   
   ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/WalletFiles.PNG)
+  
+ 
+ ### Step 5: Add Environment Variables PATH and TNS_ADMIN
+ 
+   Navigate to Environment Variables 
+   - Run (Windows + R)  -> "SystemPropertiesAdvanced"
+   
+   ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/run.PNG)
+   
+   - Click on **Environment Variables** 
+   
+   - Add Insta Client home **D:\Programs\instantclient_19_6** to **Path** variable 
+   - Add new variable TNS_ADMIN with path **D:\Programs\instantclient_19_6\network\admin** 
+   
+   ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/EnvVariables.png)
+   
 
+### Step 6: Testing ADW connection from Command line
+
+  We can now test the connectivity to the Autonomous Database using windows command line and sqlplus which we downloaded in step 1
+  
+  - Open command prompt ( Start --> cmd )
+  - Enter command like **sqlplus ADMIN/{password}@{dbname_low}**
+  
+  ![alt text](https://github.com/prampradeep/OracleAutonomousDatabase/blob/master/InstaClient/Images/ConnectTest.PNG)
 
 
 
