@@ -43,7 +43,7 @@
 
   Unzip your wallet file lets say the folder is as below.  
         
-        **D:\Programs\Wallet_PMADWC**
+   **D:\Programs\Wallet_PMADWC**
 
   This path contains the cwallet.sso file which is needed to authenticate with Autonomous Database.
 
